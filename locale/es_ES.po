@@ -1,0 +1,129 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.oneclick.view,esale_active:"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "field:product.oneclick.view,esale_available:"
+msgid "Available eSale"
+msgstr "Disponible eSale"
+
+msgctxt "field:product.oneclick.view,esale_crosssells:"
+msgid "Cross Sells"
+msgstr "Ventas cruzadas"
+
+msgctxt "field:product.oneclick.view,esale_description:"
+msgid "Sale Description"
+msgstr "Descripción de venta"
+
+msgctxt "field:product.oneclick.view,esale_menus:"
+msgid "Menus"
+msgstr "Menús"
+
+msgctxt "field:product.oneclick.view,esale_metadescription:"
+msgid "Meta Description"
+msgstr "Meta Description"
+
+msgctxt "field:product.oneclick.view,esale_metakeyword:"
+msgid "Meta Keyword"
+msgstr "Meta Keyword"
+
+msgctxt "field:product.oneclick.view,esale_metatitle:"
+msgid "Meta Title"
+msgstr "Meta Title"
+
+msgctxt "field:product.oneclick.view,esale_relateds:"
+msgid "Relateds"
+msgstr "Relacionados"
+
+msgctxt "field:product.oneclick.view,esale_sequence:"
+msgid "Sequence"
+msgstr "Secuencia"
+
+msgctxt "field:product.oneclick.view,esale_shortdescription:"
+msgid "Short Description"
+msgstr "Descripción corta"
+
+msgctxt "field:product.oneclick.view,esale_slug:"
+msgid "Slug"
+msgstr "Slug"
+
+msgctxt "field:product.oneclick.view,esale_upsells:"
+msgid "Up Sells"
+msgstr "Ventas sugeridas"
+
+msgctxt "field:product.oneclick.view,esale_visibility:"
+msgid "Visibility"
+msgstr "Visibilidad"
+
+msgctxt "help:product.oneclick.view,esale_available:"
+msgid "Product are available in e-commerce."
+msgstr "El producto estará disponible en su comercio electrónico."
+
+msgctxt "help:product.oneclick.view,esale_description:"
+msgid ""
+"You could write wiki markup to create html content. Formats text following "
+"the MediaWiki (http://meta.wikimedia.org/wiki/Help:Editing) syntax."
+msgstr ""
+"Puede escribir etiquetas wiki para el formateo del texto. Para la chuleta de"
+" las etiquetas puede consultar a MediaWiki "
+"(http://meta.wikimedia.org/wiki/Help:Editing)."
+
+msgctxt "help:product.oneclick.view,esale_metadescription:"
+msgid ""
+"Almost all search engines recommend it to be shorter than 155 characters of "
+"plain text"
+msgstr ""
+"La mayoría de los motores de búsqueda recomiendan un texto plano de no más "
+"de 155 caracteres"
+
+msgctxt "help:product.oneclick.view,esale_sequence:"
+msgid "Gives the sequence order when displaying category list."
+msgstr "La secuencia de la ordenación en la categoría"
+
+msgctxt "help:product.oneclick.view,esale_shortdescription:"
+msgid ""
+"You could write wiki markup to create html content. Formats text following "
+"the MediaWiki (http://meta.wikimedia.org/wiki/Help:Editing) syntax."
+msgstr ""
+"Puede escribir etiquetas wiki para el formateo del texto. Para la chuleta de"
+" las etiquetas puede consultar a MediaWiki "
+"(http://meta.wikimedia.org/wiki/Help:Editing)."
+
+msgctxt "selection:product.oneclick.view,esale_visibility:"
+msgid "All"
+msgstr "Todos"
+
+msgctxt "selection:product.oneclick.view,esale_visibility:"
+msgid "Catalog"
+msgstr "Catálogo"
+
+msgctxt "selection:product.oneclick.view,esale_visibility:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:product.oneclick.view,esale_visibility:"
+msgid "Search"
+msgstr "Buscar"
+
+msgctxt "view:product.oneclick.view:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "view:product.oneclick.view:"
+msgid "General"
+msgstr "General"
+
+msgctxt "view:product.oneclick.view:"
+msgid "Related"
+msgstr "Relacionado"
+
+msgctxt "view:product.oneclick.view:"
+msgid "SEO"
+msgstr "SEO"
+
+msgctxt "view:product.oneclick.view:"
+msgid "eSale"
+msgstr "eSale"
