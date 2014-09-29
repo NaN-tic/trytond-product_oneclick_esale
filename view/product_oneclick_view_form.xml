@@ -31,20 +31,20 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
                     <field name="esale_metatitle"/>
                 </page>
                 <page string="Description" id="esale-description">
-                    <separator name="esale_shortdescription" colspan="4"/>
-                    <field name="esale_shortdescription" colspan="4"/>
-                    <separator name="esale_description" colspan="4"/>
-                    <field name="esale_description" colspan="4"/>
+                    <separator name="esale_shortdescription" colspan="6"/>
+                    <field name="esale_shortdescription" colspan="6"/>
+                    <separator name="esale_description" colspan="6"/>
+                    <field name="esale_description" colspan="6"/>
                 </page>
                 <page string="Related" id="esale-related">
-                    <label name="esale_menus"/>
-                    <field name="esale_menus"/>
-                    <label name="esale_relateds"/>
-                    <field name="esale_relateds"/>
-                    <label name="esale_upsells"/>
-                    <field name="esale_upsells"/>
-                    <label name="esale_crosssells"/>
-                    <field name="esale_crosssells"/>
+                    <separator name="esale_menus" colspan="6"/>
+                    <field name="esale_menus" colspan="6"/>
+                    <separator name="esale_relateds" colspan="6"/>
+                    <field name="esale_relateds" colspan="6"/>
+                    <separator name="esale_upsells" colspan="6"/>
+                    <field name="esale_upsells" colspan="6"/>
+                    <separator name="esale_crosssells" colspan="6"/>
+                    <field name="esale_crosssells" colspan="6"/>
                 </page>
             </notebook>
         </page>
