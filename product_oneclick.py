@@ -104,8 +104,6 @@ class ProductOneClick:
         values['esale_metadescription'] = vals.esale_metadescription or None
         values['esale_metakeyword'] = vals.esale_metakeyword or None
         values['esale_metatitle'] = vals.esale_metatitle or None
-        #~ print vals.esale_menus
-        #~ print vals.esale_relateds
         if vals.esale_menus:
             values['esale_menus'] = [
                 tuple(['add', [x.id for x in vals.esale_menus]])]
@@ -119,5 +117,4 @@ class ProductOneClick:
             values['esale_crosssells'] = [
                 tuple(['add', [x.id for x in vals.esale_crosssells]])]
         values['esale_sequence'] = vals.esale_sequence or 1
-        #~ print values
         return values
