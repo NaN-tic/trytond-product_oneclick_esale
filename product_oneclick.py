@@ -93,26 +93,27 @@ class ProductOneClick:
     @classmethod
     def get_template_values(self, vals):
         values = super(ProductOneClick, self).get_template_values(vals)
-        values['esale_available'] = vals.esale_available or None
-        values['esale_active'] = vals.esale_active or None
-        values['esale_visibility'] = vals.esale_visibility or None
-        values['esale_slug'] = vals.esale_slug or None
-        values['esale_shortdescription'] = vals.esale_shortdescription or None
-        values['esale_description'] = vals.esale_description or None
-        values['esale_metadescription'] = vals.esale_metadescription or None
-        values['esale_metakeyword'] = vals.esale_metakeyword or None
-        values['esale_metatitle'] = vals.esale_metatitle or None
-        if vals.esale_menus:
-            values['esale_menus'] = [
-                tuple(['add', [x.id for x in vals.esale_menus]])]
-        if vals.esale_relateds:
-            values['esale_relateds'] = [
-                tuple(['add', [x.id for x in vals.esale_relateds]])]
-        if vals.esale_upsells:
-            values['esale_upsells'] = [
-                tuple(['add', [x.id for x in vals.esale_upsells]])]
-        if vals.esale_crosssells:
-            values['esale_crosssells'] = [
-                tuple(['add', [x.id for x in vals.esale_crosssells]])]
-        values['esale_sequence'] = vals.esale_sequence or 1
+        if vals.esale_available:
+            values['esale_available'] = vals.esale_available
+            values['esale_active'] = vals.esale_active
+            values['esale_visibility'] = vals.esale_visibility
+            values['esale_slug'] = vals.esale_slug
+            values['esale_shortdescription'] = vals.esale_shortdescription
+            values['esale_description'] = vals.esale_description or None
+            values['esale_metadescription'] = vals.esale_metadescription
+            values['esale_metakeyword'] = vals.esale_metakeyword
+            values['esale_metatitle'] = vals.esale_metatitle or None
+            if vals.esale_menus:
+                values['esale_menus'] = [
+                    tuple(['add', [x.id for x in vals.esale_menus]])]
+            if vals.esale_relateds:
+                values['esale_relateds'] = [
+                    tuple(['add', [x.id for x in vals.esale_relateds]])]
+            if vals.esale_upsells:
+                values['esale_upsells'] = [
+                    tuple(['add', [x.id for x in vals.esale_upsells]])]
+            if vals.esale_crosssells:
+                values['esale_crosssells'] = [
+                    tuple(['add', [x.id for x in vals.esale_crosssells]])]
+            values['esale_sequence'] = vals.esale_sequence or 1
         return values
