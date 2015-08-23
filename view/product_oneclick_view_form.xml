@@ -8,9 +8,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <field name="esale_available"/>
     </xpath>
     <xpath expr="/form/notebook/page[@id='sale']" position="after">
-        <page string="eSale"
-            states="{'invisible': Not(Bool(Eval('esale_available')))}"
-            id="esale">
+        <page string="eSale" id="esale">
             <notebook colspan="6">
                 <page string="General" id="esale-general">
                     <label name="esale_active"/>

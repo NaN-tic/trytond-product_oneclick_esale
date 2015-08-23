@@ -3,7 +3,7 @@
 # the full copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
-from trytond.pyson import Eval
+from trytond.pyson import Eval, Not, Bool
 from trytond.modules.product_esale.tools import slugify
 
 __all__ = ['ProductOneClickView', 'ProductOneClick']
@@ -85,6 +85,13 @@ class ProductOneClickView:
         name = self.name or ''
         name = slugify(name)
         return name
+
+    @classmethod
+    def view_attributes(cls):
+        return super(ProductOneClickView, cls).view_attributes() + [
+            ('//page[@id="esale"]', 'states', {
+                    'invisible': Not(Bool(Eval('esale_available'))),
+                    })]
 
 
 class ProductOneClick:
