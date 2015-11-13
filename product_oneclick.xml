@@ -5,7 +5,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
     <data>
         <record model="ir.ui.view" id="product_oneclick_esale_view">
             <field name="model">product.oneclick.view</field>
-            <field name="type">form</field>
+            <field name="type" eval="None"/>
             <field name="inherit" ref="product_oneclick.product_oneclick_view"/>
             <field name="name">product_oneclick_view_form</field>
         </record>
