@@ -7,10 +7,10 @@ from trytond.pyson import Eval, Not, Bool
 from trytond.modules.product_esale.tools import slugify
 
 __all__ = ['ProductOneClickView', 'ProductOneClick']
-__metaclass__ = PoolMeta
 
 
 class ProductOneClickView:
+    __metaclass__ = PoolMeta
     __name__ = 'product.oneclick.view'
     esale_available = fields.Boolean('Available eSale',
         help='Product are available in e-commerce.')
@@ -95,6 +95,7 @@ class ProductOneClickView:
 
 
 class ProductOneClick:
+    __metaclass__ = PoolMeta
     __name__ = 'product.oneclick'
 
     @classmethod
