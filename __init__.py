@@ -2,12 +2,12 @@
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 from trytond.pool import Pool
-from .product_oneclick import *
+from . import product_oneclick
 
 def register():
     Pool.register(
-        ProductOneClickView,
+        product_oneclick.ProductOneClickView,
         module='product_oneclick_esale', type_='model')
     Pool.register(
-        ProductOneClick,
+        product_oneclick.ProductOneClick,
         module='product_oneclick_esale', type_='wizard')
