@@ -9,8 +9,7 @@ from trytond.modules.product_esale.tools import slugify
 __all__ = ['ProductOneClickView', 'ProductOneClick']
 
 
-class ProductOneClickView:
-    __metaclass__ = PoolMeta
+class ProductOneClickView(metaclass=PoolMeta):
     __name__ = 'product.oneclick.view'
     esale_available = fields.Boolean('Available eSale',
         help='Product are available in e-commerce.')
@@ -21,7 +20,7 @@ class ProductOneClickView:
         ('catalog','Catalog'),
         ('none','None'),
         ], 'Visibility')
-    esale_slug = fields.Char('Slug', 
+    esale_slug = fields.Char('Slug',
         states={
             'required': Eval('esale_available', True),
         }, depends=['esale_available'])
@@ -47,7 +46,7 @@ class ProductOneClickView:
     esale_metatitle = fields.Char('Meta Title')
     esale_menus = fields.Many2Many('product.template-esale.catalog.menu',
         'template', 'menu', 'Menus')
-    esale_relateds = fields.Many2Many('product.template-product.related', 
+    esale_relateds = fields.Many2Many('product.template-product.related',
         'template', 'related', 'Relateds',
         domain=[
             ('id', '!=', Eval('id')),
@@ -68,7 +67,7 @@ class ProductOneClickView:
             ('esale_available', '=', True),
             ('salable', '=', True),
         ], depends=['id'])
-    esale_sequence = fields.Integer('Sequence', 
+    esale_sequence = fields.Integer('Sequence',
         help='Gives the sequence order when displaying category list.')
 
     @staticmethod
@@ -94,8 +93,7 @@ class ProductOneClickView:
                     })]
 
 
-class ProductOneClick:
-    __metaclass__ = PoolMeta
+class ProductOneClick(metaclass=PoolMeta):
     __name__ = 'product.oneclick'
 
     @classmethod
